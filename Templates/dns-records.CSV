@@ -1,0 +1,13 @@
+"Domain verification record set:"
+"Record name","Record type","Record Value"
+"_amazonses.marketebizz.com","TXT","tqt5aqJQhZWuQ/x0c6KjJhJrt+dTXe7wmUqUpe/CjKA="
+
+"Alternate domain verification record:"
+"Record name","Record type","Record Value"
+"marketebizz.com","TXT","amazonses:tqt5aqJQhZWuQ/x0c6KjJhJrt+dTXe7wmUqUpe/CjKA="
+
+"DKIM record set:"
+"Record name","Record type","Record Value"
+"tr7fyc4z6jd2rqv4jab2k5bpd6k5rtlz._domainkey.marketebizz.com","CNAME","tr7fyc4z6jd2rqv4jab2k5bpd6k5rtlz.dkim.amazonses.com"
+"qt3mig6nt7qot4zipb76cq25f5kbthht._domainkey.marketebizz.com","CNAME","qt3mig6nt7qot4zipb76cq25f5kbthht.dkim.amazonses.com"
+"ogzi2kiaaottv5ohjkditwogrs6fojss._domainkey.marketebizz.com","CNAME","ogzi2kiaaottv5ohjkditwogrs6fojss.dkim.amazonses.com"
