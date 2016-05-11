@@ -6,7 +6,7 @@
 
 <!-- Validation -->
 
-<form action="<?php echo get_app_info('path')?>/brand/save-brand.php" method="POST" accept-charset="utf-8" class="form-vertical" id="settings-form">
+<form action="<?php echo get_app_info('path')?>/Data/save-brand.php" method="POST" accept-charset="utf-8" class="form-vertical" id="settings-form">
 
 <div class="row">
 	
@@ -79,8 +79,12 @@
             </div>
         </div>
         
-        <input type="hidden" name="uid" value="<?php echo get_app_info('userID');?>">
-        
+        <input type="hidden" name="uid" value="<?php echo app_config('userID');?>">
+		
+		</div> 
+
+		<div class="col-lg-6">
+		
         <h3><?php echo _('SMTP settings (only if you\'re not using Amazon SES)');?></h3><br/>
         
         <div class="well">
@@ -127,19 +131,8 @@
         
         <button type="submit" class="btn btn-inverse"><i class="glyphicon glyphicon-ok glyphicon glyphicon-white"></i> <?php echo _('Save');?></button>
     </div>   
-    
-
-        <button type="submit" class="btn btn-inverse"><i class="glyphicon glyphicon-ok glyphicon glyphicon-white"></i> <?php echo _('Save');?></button>
-        
-    </div> 
+</div> 
 
 </form>
-<script type="text/javascript">
-$(document).ready(function() {
-	$("#from_email").keyup(function() {
-		$("#reply_to").val($("#from_email").val());
-		$("#login-email input").val($("#from_email").val());
-	});
-});
-</script>
+
 <?php include('../Templates/footer.php');?>
